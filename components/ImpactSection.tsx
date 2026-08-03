@@ -10,7 +10,7 @@ const data: [string, string][] = [
 
 const ImpactSection = () => {
   return (
-    <div className="mt-10 bg-[##F5FFF8]">
+    <div className="mt-10 bg-linear-to-t from-[#DDFCEC] to-[#FFFFFF]">
       <h2 className="text-center text-4xl font-semibold">
         Bano Qabil <span className="text-[#2c8e84]">Impact</span>
       </h2>
@@ -18,7 +18,7 @@ const ImpactSection = () => {
         Creating measurable impact by equipping Pakistan’s youth with
         industry-ready IT skills.
       </p>
-      <div className="mx-auto mt-10 grid w-[90%] grid-cols-4 gap-5">
+      <div className="mx-auto mt-10 grid w-[85%] grid-cols-4 gap-5">
         {data.map((entry, index) => (
           <ImpactCard key={index} text1={entry[0]} text2={entry[1]} />
         ))}
