@@ -27,3 +27,12 @@ body {
 .testimonial-section > *:first-child p {
   color: white;
 }
+
+.white-grad {
+  background: linear-gradient(
+    178.07deg,
+    rgba(255, 255, 255, 0.8) 1.63%,
+    rgba(246, 244, 244, 0.5) 73.76%,
+    rgba(255, 255, 255, 0) 98.41%
+  );
+}
