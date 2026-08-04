@@ -2,6 +2,7 @@ import CampusSection from '@/components/CampusSection';
 import CoursesSection from '@/components/CoursesSection';
 import Hero from '@/components/Hero';
 import ImpactSection from '@/components/ImpactSection';
+import LeadershipSection from '@/components/LeadershipSection';
 import NationwideImpact from '@/components/nationwideImpact';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <NationwideImpact />
       <CampusSection />
       <CoursesSection />
+      <LeadershipSection />
     </div>
   );
 }
