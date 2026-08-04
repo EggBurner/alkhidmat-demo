@@ -2,7 +2,7 @@ import React from 'react';
 
 const EmpoweringSection = () => {
   return (
-    <div className="mx-auto h-90 w-[90%] rounded-4xl bg-white bg-[url('/man_laptop_one.jpg')] bg-cover bg-center bg-no-repeat pt-8 pb-16">
+    <div className="mx-auto hidden h-90 w-[90%] rounded-4xl bg-white bg-[url('/man_laptop_one.jpg')] bg-cover bg-center bg-no-repeat pt-8 pb-16 lg:block">
       <div className="white-grad mx-auto mt-4 flex w-[50%] flex-col gap-6 rounded-4xl px-4 py-8 text-center leading-8">
         <h2 className="mx-auto w-[80%] text-3xl font-bold">
           Empowering Pakistan <br />{' '}

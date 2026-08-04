@@ -1,35 +1,95 @@
-import Image from 'next/image';
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
+
+const navLinks = [
+  'Home',
+  'About Us',
+  'Cources',
+  'Careers',
+  'Campuses',
+  'Contact Us',
+];
 
 const HeaderBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="mx-auto grid w-[90%] grid-cols-[1fr_9fr] items-center gap-4 self-center rounded-md bg-white px-6 py-4 text-sm">
+    <header className="mx-auto flex w-[90%] items-center justify-between gap-4 self-center rounded-md bg-white px-4 py-3 text-sm lg:grid lg:grid-cols-[1fr_9fr] lg:px-6 lg:py-2">
       <div className="flex items-center gap-2">
         <img alt="logo" src={'/header_logo.png'} width={50} height={50} />
         <h1 className="font-semibold text-[#2D8E84]">BanoQabil</h1>
       </div>
-      <nav className="grid grid-cols-[7fr_3fr]">
+
+      <button
+        aria-label="Open menu"
+        onClick={() => setIsOpen(true)}
+        className="flex flex-col gap-1.5 p-2 lg:hidden"
+      >
+        <span className="block h-0.5 w-6 bg-[#2D8E84]" />
+        <span className="block h-0.5 w-6 bg-[#2D8E84]" />
+        <span className="block h-0.5 w-6 bg-[#2D8E84]" />
+      </button>
+
+      <nav className="hidden lg:grid lg:grid-cols-[6.8fr_3.2fr]">
         <menu className="flex items-center justify-center gap-8">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Cources</li>
-          <li>Careers</li>
-          <li>Campuses</li>
-          <li>Contact Us</li>
+          {navLinks.map((link) => (
+            <li key={link}>{link}</li>
+          ))}
         </menu>
         <menu className="flex items-center justify-around border-[#2D8E84]">
           <li>
-            <button className="rounded-sm border p-2 text-[#2D8E84]">
+            <button className="rounded-sm border p-2 whitespace-nowrap text-[#2D8E84]">
               Student Log In
             </button>
           </li>
           <li>
-            <button className="rounded-sm border bg-[#2D8E84] p-2 text-white">
+            <button className="rounded-sm border bg-[#2D8E84] p-2 whitespace-nowrap text-white">
               Register as Student
             </button>
           </li>
         </menu>
       </nav>
+
+      {isOpen && (
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+        />
+      )}
+
+      <aside
+        className={`fixed top-0 right-0 z-50 flex h-full w-64 flex-col gap-6 bg-white px-6 py-6 transition-transform duration-300 lg:hidden ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <button
+          aria-label="Close menu"
+          onClick={() => setIsOpen(false)}
+          className="self-end p-2 text-xl leading-none text-[#2D8E84]"
+        >
+          ✕
+        </button>
+        <menu className="flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <li key={link} onClick={() => setIsOpen(false)}>
+              {link}
+            </li>
+          ))}
+        </menu>
+        <menu className="mt-auto flex flex-col gap-3">
+          <li>
+            <button className="w-full rounded-sm border p-2 text-[#2D8E84]">
+              Student Log In
+            </button>
+          </li>
+          <li>
+            <button className="w-full rounded-sm border bg-[#2D8E84] p-2 text-white">
+              Register as Student
+            </button>
+          </li>
+        </menu>
+      </aside>
     </header>
   );
 };

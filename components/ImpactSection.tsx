@@ -18,7 +18,7 @@ const ImpactSection = () => {
         Creating measurable impact by equipping Pakistan’s youth with
         industry-ready IT skills.
       </p>
-      <div className="mx-auto mt-10 grid w-[85%] grid-cols-4 gap-5">
+      <div className="mx-auto mt-10 grid w-[85%] grid-cols-1 gap-5 lg:grid-cols-4">
         {data.map((entry, index) => (
           <ImpactCard key={index} text1={entry[0]} text2={entry[1]} />
         ))}

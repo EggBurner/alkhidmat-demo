@@ -4,7 +4,7 @@ import React from 'react';
 const HeroBottomn = () => {
   return (
     <>
-      <div className="mx-auto w-fit rounded-full border p-1.5 text-center text-[12px] text-white">
+      <div className="mx-auto mt-8 w-fit rounded-full border p-1.5 text-center text-[12px] text-white">
         Youth Empowerment through IT Education
       </div>
       <div>

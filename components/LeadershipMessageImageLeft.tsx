@@ -3,7 +3,7 @@ import React from 'react';
 
 const LeadershipMessageImageLeft = () => {
   return (
-    <div className="mt-12 grid grid-cols-[3.5fr_6.5fr] rounded-lg border border-[#F3F4F6] shadow">
+    <div className="mt-12 grid grid-cols-1 rounded-lg border border-[#F3F4F6] shadow lg:grid-cols-[3.5fr_6.5fr]">
       <div className="flex flex-col items-center justify-center gap-1 bg-[#2C8E84]/5 px-8 pt-10 pb-8">
         <Image
           alt='"Hafiz Naeem'
@@ -11,7 +11,7 @@ const LeadershipMessageImageLeft = () => {
           width={150}
           height={150}
           priority
-          className="imageShadow size-54 rounded-full border-3 border-white"
+          className="imageShadow size-40 rounded-full border-3 border-white lg:size-54"
         />
         <h3 className="text-center text-lg font-bold text-[#101828]">
           Hafiz Naeem ur Rehman
