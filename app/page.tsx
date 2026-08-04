@@ -13,7 +13,7 @@ import TestimonialSection from '@/components/TestimonialSection';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Hero />
       <ImpactSection />
       <NationwideImpact />

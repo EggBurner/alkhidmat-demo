@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: 'Demo App',
   description: 'A demo at AKFP - making design from figma',
 };
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,

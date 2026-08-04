@@ -25,7 +25,7 @@ const NationwideImpact = () => {
         A strong nationwide presence delivering skills and opportunities to
         every region.
       </p>
-      <div className="mx-auto mt-10 grid w-[85%] grid-cols-4 gap-x-8 gap-y-5">
+      <div className="mx-auto mt-10 grid w-[85%] grid-cols-1 gap-x-8 gap-y-5 lg:grid-cols-4">
         {data.map((entry, index) => (
           <NationWIdeCard key={index} text1={entry[0]} text2={entry[1]} />
         ))}

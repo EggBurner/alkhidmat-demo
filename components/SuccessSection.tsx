@@ -10,7 +10,7 @@ const SuccessSection = () => {
       <h2 className="mt-2 text-center text-4xl font-semibold">
         Your path to <span className="text-[#2c8e84]">Success</span>
       </h2>
-      <p className="mx-auto mt-4 w-[40%] text-center text-[13px] text-[#6A7282]">
+      <p className="mx-auto mt-4 text-center text-[13px] text-[#6A7282] lg:w-[40%]">
         Your Journey from application to career success in simple, achievable
         steps designed to empower you.
       </p>

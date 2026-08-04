@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const LeadershipMessageImageRight = () => {
   return (
-    <div className="mt-12 grid grid-cols-[6.5fr_3.5fr] rounded-lg border border-[#F3F4F6] shadow">
+    <div className="mt-12 grid grid-cols-1 rounded-lg border border-[#F3F4F6] shadow lg:grid-cols-[6.5fr_3.5fr]">
       <div className="text-md flex flex-col gap-6 px-8 pt-10 pb-8 text-[#4A5565]">
         <p>
           In a world where technology and skills define the future, Bano Qabil
@@ -31,7 +31,7 @@ const LeadershipMessageImageRight = () => {
           width={150}
           height={150}
           priority
-          className="imageShadow size-54 rounded-full border-3 border-white"
+          className="imageShadow size-40 rounded-full border-3 border-white lg:size-54"
         />
         <h3 className="text-center text-lg font-bold text-[#101828]">
           Mr. Naveed Ali Baig

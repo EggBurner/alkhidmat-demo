@@ -22,7 +22,7 @@ const CoursesSection = () => {
       <p className="mt-4 text-center text-[13px] text-[#6A7282]">
         Courses designed for real-world tech careers.
       </p>
-      <div className="mx-auto mt-10 grid w-[85%] grid-cols-3 gap-6">
+      <div className="mx-auto mt-10 grid grid-cols-1 gap-6 lg:w-[85%] lg:grid-cols-3">
         {data.map((entry) => (
           <CourseCard key={entry} text={entry} />
         ))}
@@ -32,8 +32,8 @@ const CoursesSection = () => {
       </button>
       <div className="absolute top-0 -left-5 z-0 h-74 w-108 rounded-full bg-[#A4F4CF]/30 blur-3xl"></div>
       <div className="absolute right-0 bottom-0 z-0 h-74 w-108 rounded-full bg-[#A4F4CF]/30 blur-3xl"></div>
-      <div className="absolute -top-68 -right-68 z-20 size-96 rounded-full bg-radial from-[#0E5049] to-[#29978C]/30"></div>
-      <div className="absolute -bottom-80 -left-68 z-20 size-96 rounded-full bg-radial from-[#0E5049] to-[#29978C]/30"></div>
+      <div className="absolute -top-68 -right-68 z-20 size-96 rounded-full bg-radial from-[#0E5049] to-[#29978C]/30 blur-xl"></div>
+      <div className="absolute -bottom-80 -left-68 z-20 size-96 rounded-full bg-radial from-[#0E5049] to-[#29978C]/30 blur-xl"></div>
     </div>
   );
 };
