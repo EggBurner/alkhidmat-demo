@@ -1,5 +1,6 @@
 import CampusSection from '@/components/CampusSection';
 import CoursesSection from '@/components/CoursesSection';
+import EmpoweringSection from '@/components/EmpoweringSection';
 import Hero from '@/components/Hero';
 import ImpactSection from '@/components/ImpactSection';
 import LeadershipSection from '@/components/LeadershipSection';
@@ -18,6 +19,7 @@ export default function Home() {
       <LeadershipSection />
       <TestimonialSection />
       <SuccessSection />
+      <EmpoweringSection />
     </div>
   );
 }
