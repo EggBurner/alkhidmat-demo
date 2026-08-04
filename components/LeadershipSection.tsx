@@ -11,7 +11,7 @@ const LeadershipSection = () => {
       <h2 className="mt-2 text-center text-4xl font-semibold">
         Leadership <span className="text-[#2c8e84]">Messages</span>
       </h2>
-      <p className="mx-auto mt-4 w-[35%] text-center text-[12px] text-[#6A7282]">
+      <p className="mx-auto mt-4 w-[35%] text-center text-[13px] text-[#6A7282]">
         Inspiration and guidance from the leaders driving the Bano Qabil mission
         across Pakistan.
       </p>

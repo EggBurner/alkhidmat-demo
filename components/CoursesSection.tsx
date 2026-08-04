@@ -19,7 +19,7 @@ const CoursesSection = () => {
       <h2 className="mt-2 text-center text-4xl font-semibold">
         Our <span className="text-[#2c8e84]">Courses</span>
       </h2>
-      <p className="mt-4 text-center text-[12px] text-[#6A7282]">
+      <p className="mt-4 text-center text-[13px] text-[#6A7282]">
         Courses designed for real-world tech careers.
       </p>
       <div className="mx-auto mt-10 grid w-[85%] grid-cols-3 gap-6">
