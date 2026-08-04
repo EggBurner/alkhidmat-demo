@@ -2,6 +2,7 @@ import CampusSection from '@/components/CampusSection';
 import ContactSection from '@/components/ContactSection';
 import CoursesSection from '@/components/CoursesSection';
 import EmpoweringSection from '@/components/EmpoweringSection';
+import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import ImpactSection from '@/components/ImpactSection';
 import LeadershipSection from '@/components/LeadershipSection';
@@ -24,6 +25,7 @@ export default function Home() {
       <EmpoweringSection />
       <ContactSection />
       <PartnerSection />
+      <Footer />
     </div>
   );
 }
