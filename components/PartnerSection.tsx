@@ -3,7 +3,7 @@ import Sliderbar from './Sliderbar';
 
 const PartnerSection = () => {
   return (
-    <div className="bg-[#F6F6F6] pt-15">
+    <div className="bg-[#F6F6F6] py-15">
       <h2 className="mt-2 text-center text-4xl font-semibold">
         Our <span className="text-[#2c8e84]">Partners</span>
       </h2>
