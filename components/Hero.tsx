@@ -14,7 +14,7 @@ const Hero = () => {
             src={'/rally.png'}
             width={600}
             height={200}
-            className="mx-auto w-[60%] object-cover opacity-20"
+            className="mx-auto w-[60%] object-cover opacity-10"
 
             priority
           />
