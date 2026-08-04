@@ -14,7 +14,7 @@ const ImpactSection = () => {
       <h2 className="text-center text-4xl font-semibold">
         Bano Qabil <span className="text-[#2c8e84]">Impact</span>
       </h2>
-      <p className="mt-4 text-center text-[12px] text-[#6A7282]">
+      <p className="mt-4 text-center text-[13px] text-[#6A7282]">
         Creating measurable impact by equipping Pakistan’s youth with
         industry-ready IT skills.
       </p>
