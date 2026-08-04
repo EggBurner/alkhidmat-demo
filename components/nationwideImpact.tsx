@@ -21,7 +21,7 @@ const NationwideImpact = () => {
       <h2 className="mt-2 text-center text-4xl font-semibold">
         Our Nationwide <span className="text-[#2c8e84]">Impact</span>
       </h2>
-      <p className="mt-4 text-center text-[12px]">
+      <p className="mt-4 text-center text-[12px] text-[#6A7282]">
         A strong nationwide presence delivering skills and opportunities to
         every region.
       </p>

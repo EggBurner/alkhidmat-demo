@@ -1,4 +1,5 @@
 import CampusSection from '@/components/CampusSection';
+import CoursesSection from '@/components/CoursesSection';
 import Hero from '@/components/Hero';
 import ImpactSection from '@/components/ImpactSection';
 import NationwideImpact from '@/components/nationwideImpact';
@@ -10,6 +11,7 @@ export default function Home() {
       <ImpactSection />
       <NationwideImpact />
       <CampusSection />
+      <CoursesSection />
     </div>
   );
 }
