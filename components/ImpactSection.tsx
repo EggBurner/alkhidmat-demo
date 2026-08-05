@@ -1,12 +1,6 @@
 import React from 'react';
 import ImpactCard from './impactCard';
-
-const data: [string, string][] = [
-  ['1.M', 'Registered Students'],
-  ['157', 'BQ IT Centers'],
-  ['98k+', 'Graduated Students'],
-  ['61', 'Districts Nationwide'],
-];
+import { impactData } from '@/lib/data';
 
 const ImpactSection = () => {
   return (
@@ -20,8 +14,8 @@ const ImpactSection = () => {
         industry-ready IT skills.
       </p>
       <div className="mx-auto mt-10 grid w-[85%] grid-cols-1 gap-5 lg:grid-cols-4">
-        {data.map((entry, index) => (
-          <ImpactCard key={index} text1={entry[0]} text2={entry[1]} />
+        {impactData.map((entry, index) => (
+          <ImpactCard key={index} heading={entry.heading} desc={entry.desc} />
         ))}
       </div>
     </div>
