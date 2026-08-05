@@ -12,7 +12,8 @@ const ImpactSection = () => {
   return (
     <div className="mt-10 bg-linear-to-t from-[#DDFCEC] to-[#FFFFFF]">
       <h2 className="text-center text-4xl font-semibold">
-        Bano Qabil <span className="text-[#2c8e84]">Impact</span>
+        Bano Qabil{' '}
+        <span className="ibrand-font font-medium text-[#2c8e84]">Impact</span>
       </h2>
       <p className="mt-4 text-center text-[13px] text-[#6A7282]">
         Creating measurable impact by equipping Pakistan’s youth with

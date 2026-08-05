@@ -9,7 +9,8 @@ const LeadershipSection = () => {
         EMPOWER YOUR FUTURE
       </div>
       <h2 className="mt-2 text-center text-4xl font-semibold">
-        Leadership <span className="text-[#2c8e84]">Messages</span>
+        Leadership{' '}
+        <span className="ibrand-font font-medium text-[#2c8e84]">Messages</span>
       </h2>
       <p className="mx-auto mt-4 text-center text-[13px] text-[#6A7282] lg:w-[35%]">
         Inspiration and guidance from the leaders driving the Bano Qabil mission

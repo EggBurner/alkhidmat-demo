@@ -6,7 +6,7 @@ const EmpoweringSection = () => {
       <div className="white-grad mx-auto mt-4 flex w-[50%] flex-col gap-6 rounded-4xl px-4 py-8 text-center leading-8">
         <h2 className="mx-auto w-[80%] text-3xl font-bold">
           Empowering Pakistan <br />{' '}
-          <span className="x text-2xl text-[#2c8e84]">
+          <span className="x ibrand-font text-2xl font-medium text-[#2c8e84]">
             Through Digital Skills
           </span>
         </h2>

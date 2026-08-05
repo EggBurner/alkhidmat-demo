@@ -8,7 +8,8 @@ const CampusSection = () => {
         REGIONAL NETWORK
       </div>
       <h2 className="mt-2 text-center text-4xl font-semibold">
-        Explore Our <span className="text-[#2c8e84]">Campuses</span>
+        Explore Our{' '}
+        <span className="ibrand-font font-medium text-[#2c8e84]">Campuses</span>
       </h2>
       <div className="mx-auto mt-10 grid grid-cols-1 gap-6 lg:w-[85%] lg:grid-cols-3">
         <CampusCard />
