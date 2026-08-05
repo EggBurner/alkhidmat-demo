@@ -34,17 +34,22 @@ const HeaderBar = () => {
       <nav className="hidden lg:grid lg:grid-cols-[6.8fr_3.2fr]">
         <menu className="flex items-center justify-center gap-8">
           {navLinks.map((link) => (
-            <li key={link}>{link}</li>
+            <li
+              key={link}
+              className="decoration-[#29978C] decoration-2 underline-offset-4 hover:cursor-pointer hover:underline"
+            >
+              {link}
+            </li>
           ))}
         </menu>
         <menu className="flex items-center justify-around border-[#2D8E84]">
           <li>
-            <button className="rounded-sm border p-2 whitespace-nowrap text-[#2D8E84]">
+            <button className="rounded-sm border p-2 whitespace-nowrap text-[#2D8E84] hover:bg-[#2D8E84] hover:text-white">
               Student Log In
             </button>
           </li>
           <li>
-            <button className="rounded-sm border bg-[#2D8E84] p-2 whitespace-nowrap text-white">
+            <button className="rounded-sm border border-[#2D8E84] bg-[#2D8E84] p-2 whitespace-nowrap text-white hover:bg-white hover:text-[#2D8E84]">
               Register as Student
             </button>
           </li>
