@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { inter, poppins, robotoMono, iBrand } from './fonts';
+import { NextParticlesProvider } from '@tsparticles/nextjs';
+import { init } from './particles-init';
 
 export const metadata: Metadata = {
   title: 'Demo App',
@@ -21,7 +23,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${robotoMono.variable} ${poppins.variable} ${iBrand.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <NextParticlesProvider init={init}>{children}</NextParticlesProvider>
+      </body>
     </html>
   );
 }
