@@ -26,14 +26,12 @@ const Hero = () => {
 
   return (
     <div className="relative h-fit overflow-hidden bg-linear-to-r from-[#000E0D] to-[#007468] pt-6">
-      {/* particles layer — behind everything */}
       <NextParticles
         id="hero-particles"
         options={options}
         className="absolute inset-0 z-0 opacity-20"
       />
 
-      {/* actual content — above particles */}
       <div className="relative z-10">
         <HeaderBar />
         <div className="h-52 sm:h-60 lg:h-64">
