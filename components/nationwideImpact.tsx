@@ -1,16 +1,6 @@
 import React from 'react';
 import NationWIdeCard from './NationWIdeCard';
-
-const data: [string, string][] = [
-  ['Khyber Pakhtunkhwa', '79 CAMPUSES'],
-  ['Punjab', '42 CAMPUSES'],
-  ['Karachi', '26 CAMPUSES'],
-  ['Islamabad', '08 CAMPUSES'],
-  ['Balochistan', '07 CAMPUSES'],
-  ['Sindh', 'Coming Soon'],
-  ['Azad Kashmir', 'Coming Soon'],
-  ['Gilgit-Baltistan', 'Coming Soon'],
-];
+import { regionData } from '@/lib/data';
 
 const NationwideImpact = () => {
   return (
@@ -27,8 +17,12 @@ const NationwideImpact = () => {
         every region.
       </p>
       <div className="mx-auto mt-10 grid w-[85%] grid-cols-1 gap-x-8 gap-y-5 lg:grid-cols-4">
-        {data.map((entry, index) => (
-          <NationWIdeCard key={index} text1={entry[0]} text2={entry[1]} />
+        {regionData.map((entry, index) => (
+          <NationWIdeCard
+            key={index}
+            region={entry.region}
+            campuses={entry.campuses}
+          />
         ))}
       </div>
     </div>

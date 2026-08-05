@@ -1,14 +1,6 @@
 import React from 'react';
 import Testimony from './Testimony';
-
-const data: [string, string][] = [
-  ['Haroon Ahmad', '/user_icon.png'],
-  ['Ali Khan', '/user_icon_2.png'],
-  ['Maaz Shafqat', '/user_icon_3.png'],
-  ['Sarah Imtiaz', '/user_icon_4.png'],
-  ['Hassan Zulfiqar', '/user_icon_5.png'],
-  ['Fazl ur Rehman', '/user_icon_6.png'],
-];
+import { userData } from '@/lib/data';
 
 const TestimonialSection = () => {
   return (
@@ -27,8 +19,8 @@ const TestimonialSection = () => {
         have climbed the ladder of success through Bano Qabil.
       </p>
       <div className="testimonial-section mx-auto mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
-        {data.map((entry) => (
-          <Testimony key={entry[0]} text1={entry[0]} text2={entry[1]} />
+        {userData.map((entry) => (
+          <Testimony key={entry.name} name={entry.name} avatar={entry.avatar} />
         ))}
       </div>
     </div>

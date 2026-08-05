@@ -1,12 +1,11 @@
 import React, { Children } from 'react';
+import { CourseType } from '@/types/course';
 
-type CourseCardProps = {
-  text: string;
-};
-
-const CourseCard = ({ text }: CourseCardProps) => {
+const CourseCard = ({ text, style }: CourseType) => {
   return (
-    <div className="z-10 flex flex-col rounded-2xl border border-[#0096894D] bg-white p-7 shadow-xl">
+    <div
+      className={`z-10 flex flex-col rounded-2xl border border-[#0096894D] p-7 shadow-xl ${style}`}
+    >
       <h3 className="font-semibold text-[#383E49]">{text}</h3>
       <div className="flex items-center gap-2 text-[12px]">
         <div className="rounded-full border border-[#CBFBF1] bg-[#F0FDFA] px-2 py-0.5 text-[#2C8E84]">

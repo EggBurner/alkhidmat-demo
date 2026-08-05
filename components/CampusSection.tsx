@@ -11,12 +11,7 @@ const CampusSection = () => {
         Explore Our{' '}
         <span className="ibrand-font font-medium text-[#2c8e84]">Campuses</span>
       </h2>
-      <div className="mx-auto mt-10 grid grid-cols-1 gap-6 lg:w-[85%] lg:grid-cols-3">
-        <CampusCard />
-        <CampusCard />
-        <CampusCard />
-        <CampusCard />
-        <CampusCard />
+      <div className="mx-auto mt-10 lg:w-[85%]">
         <CampusCard />
       </div>
       <button className="text-md mx-auto mt-12 block h-fit w-fit rounded-full bg-[#2C8E84] px-10 py-3 font-semibold text-white shadow-2xl">

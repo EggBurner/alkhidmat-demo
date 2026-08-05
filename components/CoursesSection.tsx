@@ -1,14 +1,7 @@
 import React from 'react';
 import CourseCard from './CourseCard';
 
-const data: string[] = [
-  'Data Science',
-  'Graphic Designing',
-  'Business Analyst',
-  'Project Management',
-  'Quality Assurance',
-  'Web Development',
-];
+import { courseData } from '@/lib/data';
 
 const CoursesSection = () => {
   return (
@@ -24,8 +17,8 @@ const CoursesSection = () => {
         Courses designed for real-world tech careers.
       </p>
       <div className="mx-auto mt-10 grid grid-cols-1 gap-6 lg:w-[85%] lg:grid-cols-3">
-        {data.map((entry) => (
-          <CourseCard key={entry} text={entry} />
+        {courseData.map((entry) => (
+          <CourseCard key={entry.text} text={entry.text} style={entry.style} />
         ))}
       </div>
       <button className="text-md mx-auto mt-12 block h-fit w-fit rounded-full bg-[#2C8E84] px-10 py-3 font-semibold text-white shadow-2xl">

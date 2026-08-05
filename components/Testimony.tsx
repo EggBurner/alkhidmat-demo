@@ -1,12 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-type testimonyProps = {
-  text1: string;
-  text2: string;
-};
-
-const Testimony = ({ text1, text2 }: testimonyProps) => {
+const Testimony = ({ name, avatar }: UserType) => {
   return (
     <div className="flex flex-col gap-2 rounded-2xl border border-[#F3F4F6] bg-white px-8 py-4 shadow">
       <div className="flex">
@@ -30,12 +25,12 @@ const Testimony = ({ text1, text2 }: testimonyProps) => {
       </div>
       <div className="flex justify-between border-t pt-2">
         <div>
-          <p className="text-[12px] font-semibold text-[#2C8E84]">{text1}</p>
+          <p className="text-[12px] font-semibold text-[#2C8E84]">{name}</p>
           <p className="text-[11px]">Student</p>
         </div>
         <Image
           alt="user icon"
-          src={text2}
+          src={avatar}
           width={20}
           height={20}
           className="size-10"
