@@ -8,12 +8,12 @@ const HeroBottomn = () => {
         Youth Empowerment through IT Education
       </div>
       <div>
-        <h1 className="mx-auto mt-3 w-[60%] text-center text-4xl font-semibold text-white">
+        <h1 className="poppins-font mx-auto mt-3 w-[90%] text-center text-4xl font-semibold text-white lg:w-[60%]">
           Contributing to Nation Reconstruction Through{' '}
           <span className="text-[#A3C902]">Free IT Education</span>
         </h1>
       </div>
-      <div className="mx-auto mt-5 w-[50%] text-center text-[14px] text-white">
+      <div className="mx-auto mt-5 w-[80%] text-center text-[14px] text-white lg:w-[50%]">
         Pakistan’s largest free IT education initiative, empowering youth with
         AI-driven, future-ready skills to excel as professionals, freelancers,
         and entrepreneurs.

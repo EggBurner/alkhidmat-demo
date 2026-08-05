@@ -9,7 +9,8 @@ const ContactSection = () => {
         GET IN TOUCH
       </div>
       <h2 className="mt-2 text-center text-4xl font-semibold">
-        Contact <span className="text-[#2c8e84]">Us</span>
+        Contact{' '}
+        <span className="ibrand-font font-medium text-[#2c8e84]">Us</span>
       </h2>
       <p className="mx-auto mt-4 text-center text-[13px] text-[#6A7282] lg:w-[40%]">
         Your Journey from application to career success in simple, achievable

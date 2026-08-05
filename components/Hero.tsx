@@ -23,7 +23,7 @@ const Hero = () => {
               alt="Overlay"
               width={400}
               height={150}
-              className="h-auto w-[60%] max-w-[400px] object-contain sm:w-[50%]"
+              className="h-auto w-[60%] max-w-100 object-contain sm:w-[50%]"
               style={{
                 maskImage:
                   'linear-gradient(to bottom, black 40%, transparent 100%)',

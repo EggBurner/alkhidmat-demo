@@ -18,7 +18,9 @@ const TestimonialSection = () => {
       </div>
       <h2 className="mx-auto mt-4 text-center text-4xl font-semibold lg:w-[40%]">
         Student Journey and{' '}
-        <span className="text-[#2c8e84]">Success Stories</span>
+        <span className="ibrand-font font-medium text-[#2c8e84]">
+          Success Stories
+        </span>
       </h2>
       <p className="mx-auto mt-4 text-center text-[13px] text-[#6A7282] lg:w-[35%]">
         Heartfelt stories and transformational journeys from the student who

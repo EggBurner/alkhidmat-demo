@@ -23,9 +23,9 @@ const TimeLine = () => {
         return (
           <div
             key={i}
-            className="grid grid-cols-[1fr_auto_1fr] items-stretch gap-8"
+            className="hidden grid-cols-[1fr_auto_1fr] items-stretch gap-8 lg:grid"
           >
-            <div // no quotes (Tailwind handles this fine for simple paths)
+            <div
               className={
                 isLeft
                   ? 'rounded-3xl bg-white bg-[url(/lines.png)] bg-cover bg-center bg-no-repeat px-4 py-6 pt-6 shadow-xl'
@@ -64,6 +64,20 @@ const TimeLine = () => {
           </div>
         );
       })}
+      {events.map((entry, index) => (
+        <div
+          key={index}
+          className="my-6 flex items-center justify-start gap-8 rounded-2xl border px-2 py-4 lg:hidden"
+        >
+          <p className="mono-font my-auto flex size-8 items-center justify-center rounded-full bg-[#2C8E84] text-center text-white">
+            {index}
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-semibold">{entry[0]}</p>
+            <p className="text-xs text-[#6A7282]">{entry[1]}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

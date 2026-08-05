@@ -36,3 +36,15 @@ body {
     rgba(255, 255, 255, 0) 98.41%
   );
 }
+
+.mono-font {
+  font-family: var(--font-roboto-mono);
+}
+
+.poppins-font {
+  font-family: var(--font-poppins);
+}
+
+.ibrand-font {
+  font-family: var(--font-ibrand);
+}
